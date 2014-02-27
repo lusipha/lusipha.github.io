@@ -1,3 +1,35 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+# 有关设置的说明在这里
+# http://jekyllrb.com/docs/configuration/
+# https://github.com/jekyllcn/jekyllcn.github.io/blob/master/docs/configuration.md
+
+# jekyll的本地调试命令是下面这样，尤其是要设置 --baseurl ''
+# jekyll serve --baseurl '' -w
+
+# 博客的名字
+title: 		薛笛的博客
+
+# 顾名思义
+author:		薛笛
+
+# 模版解析器
+markdown: 	redcarpet
+
+# 语法高亮
+pygments: 	true
+
+# 不允许使用插件
+safe:		true
+
+# 自动创建日志间的索引，可能会很慢 关掉
+lis:		false
+
+# 日志url格式
+permalink: 	/:title.html
+
+# 有文件更新就自动更新站点，本地调试的时候很有用
+auto:		true
+
+# 本站地址
+url:		lusipha.github.io
+
+
