@@ -17,9 +17,6 @@ index: 	true
    <p>
    {{ post.content  | | split:'<!--more-->' | first | strip_html }}
    <a class="more" href="{{ site.baseurl }}{{ post.url }}">[继续阅读]</a>
-   <p>{{ site.baseurl }}</p>
-   <p>{{ post.url }}</p>
-   <p>{{ site.baseurl }}{{ post.url }}</p>
    </p>
  </div>
 </article>
