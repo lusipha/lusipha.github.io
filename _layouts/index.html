@@ -13,7 +13,12 @@
 	<div id="clickload">页面加载中...</div>
 	<div id="wrap">
 		{% include header.html %}
-		{% include post.html %}
+		<div id="contents">
+      <section id="content">
+      {{ content }}
+      </section>
+      <div class="clear"></div>
+    </div>
 		{% include footer.html %}
 	</div>
   </body>
