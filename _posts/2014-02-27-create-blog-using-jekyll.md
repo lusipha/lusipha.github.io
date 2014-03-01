@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Github+Jekyll+Markdown搭建免费的个人博客"
+title:  "Github+Jekyll+Markdown搭建免费的个人博客【持续更新】"
 date:   2014-02-27
 tags:	写作技巧
 categories: 写作技巧
 ---
 
+经过几天的折腾，从无到有建立一个托管到Github Pages上的Blog。总体难度不大，主要是查找模板、更改配置、熟悉语法等一些琐碎的事情。架子搭好了之后，剩下的主要是写作了，希望能有时间一直更新下去。关于建站，这里总结了几点经验供大家参考。
+
+<!--more-->
 
 ### 关于使用Github Pages搭建个人Blog的相关教程
-
-
-经过几天的折腾，总结了一下从无到有建立一个托管到Github Pages上的Blog，大致有如下几个关键过程：
 
 * 在Github上注册一个帐号，创建一个`username.github.io`的仓库
 * 在Github上寻找合适的或你喜欢的blog仓库，fork到自己的空间中，并pull到本地
