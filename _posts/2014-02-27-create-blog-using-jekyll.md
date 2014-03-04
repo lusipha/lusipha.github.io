@@ -27,6 +27,7 @@ categories: 写作技巧
 
 【jekyll本地调试】`jekyll serve --baseurl '' --watch`，其中`--watch`是为了能看到运行的详细信息
 
+【主题】如果对默认版式不满意，有些[demo][theme_demo]可供参考
 
 ###	Markdown功能和用法
 【基础语法】Markdown语法中文版文档在[这里][md_grammar_cn]，原始版英文文档在[这里][md_grammar_en]
@@ -56,7 +57,38 @@ int main(int argc, char ** argv)
 sudo vi /etc/network/interfaces
 ```
 
+【数学公式】  
+
+有人总结了写数学公式的[一些方法][math]，这里我还是选择了[Mathjax][]。使用Mathjax有两种方式：	
+
+*	通过Mathjax的CDN来下载和渲染公式 
+*	把js文件安装到网站里，就可以用本地路径渲染了  
+
+个人博客选第一种也行，反正是托管到svr上的。行内公式是这样：\\(E=mc^2\\)，行间公式是这样：$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
+
+最后再来个牛叉的欧拉公式：\\(\mathrm{e}^{- \mathrm{i} \pi} + 1 = 0\\)
+
+【表格】
+
+值|描述  
+|:---------------|:---------------  
+
+baseline|默认元素放置在父元素的基线上  
+sub|垂直对齐文本的下标  
+super|垂直对齐文本的上标  
+top|把元素的顶端与行中最高元素的顶端对齐  
+text-top|把元素的顶端与父元素字体的顶端对齐  
+middle|把此元素放置在父元素的中部  
+bottom|把元素的顶端与行中最低的元素的顶端对齐  
+text-bottom|把元素的底端与父元素字体的底端对齐  
+length|相对基准线的偏移  
+%|使用 "line-height" 属性的百分比值来排列此元素允许使用负值  
+inherit|规定应该从父元素继承 vertical-align 属性的值*（所有的IE都不支持？！）*   
+
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll_doc]:    http://jekyllrb.com
 [md_grammar_cn]: http://markdown.cn
 [md_grammar_en]: http://daringfireball.net
+[theme_demo]: http://yuanyong.org/blog/collect-jekyll-theme.html
+[math]: http://scorpiohw.github.io/blog/2013/01/29/wei-markdowntian-jia-shu-xue-gong-shi/
+[Mathjax]: http://www.mathjax.org/
