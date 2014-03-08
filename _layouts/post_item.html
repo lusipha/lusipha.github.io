@@ -1,0 +1,25 @@
+---
+layout: posts
+---
+
+<article>
+  <h2>
+    {{ page.title }}
+    <a href="{{ page.url }}" class="permalink" title="Permalink">∞</a>
+  </h2>
+  <span class="post-category">
+    {% for category in page.categories %}
+    <span class="label">{{ category }}</span>
+    {% endfor %}
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      {{ page.date | date_to_string }}
+    </span>
+  </div>
+  <div class="post-content">
+    {{ content }}
+    {% include section_nav.html %}
+  </div>
+  <div class="postunder"><div id="comments">{% include comments.html %}</div></div>
+</article>

@@ -1,12 +1,14 @@
 ---
-layout: post
-title:  "Github+Jekyll+Markdown搭建免费的个人博客【持续更新】"
-date:   2014-02-27
-tags:	写作技巧
-categories: 写作技巧
+layout: post_item
+title:  'Github+Jekyll+Markdown搭建免费个人博客【持续更新】'
+date:   2014-02-26
+author: 薛笛
+categories : [写作技巧]
+tags:	[写作技巧]
 ---
 
-经过几天的折腾，从无到有建立一个托管到Github Pages上的Blog。总体难度不大，主要是查找模板、更改配置、熟悉语法等一些琐碎的事情。架子搭好了之后，剩下的主要是写作了，希望能有时间一直更新下去。关于建站，这里总结了几点经验供大家参考。
+
+经过几天的折腾，从无到有建立一个托管到Github Pages上的Blog。总体难度不大，主要是查找模板、更改配置、熟悉语法等一些琐碎的事情。架子搭好了之后，一般就不用再折腾了，码字过程还是相当简单和流畅的。
 
 <!--more-->
 
@@ -58,7 +60,7 @@ sudo vi /etc/network/interfaces
 ```
 
 【数学公式】  
-
+{% include mathjax.html %}
 有人总结了写数学公式的[一些方法][math]，这里我还是选择了[Mathjax][]。使用Mathjax有两种方式：	
 
 *	通过Mathjax的CDN来下载和渲染公式 
@@ -70,20 +72,8 @@ sudo vi /etc/network/interfaces
 
 【表格】
 
-值|描述  
-|:---------------|:---------------  
+未完待续......
 
-baseline|默认元素放置在父元素的基线上  
-sub|垂直对齐文本的下标  
-super|垂直对齐文本的上标  
-top|把元素的顶端与行中最高元素的顶端对齐  
-text-top|把元素的顶端与父元素字体的顶端对齐  
-middle|把此元素放置在父元素的中部  
-bottom|把元素的顶端与行中最低的元素的顶端对齐  
-text-bottom|把元素的底端与父元素字体的底端对齐  
-length|相对基准线的偏移  
-%|使用 "line-height" 属性的百分比值来排列此元素允许使用负值  
-inherit|规定应该从父元素继承 vertical-align 属性的值*（所有的IE都不支持？！）*   
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll_doc]:    http://jekyllrb.com

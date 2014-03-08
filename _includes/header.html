@@ -1,17 +1,18 @@
-<div id="header">
-	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=30775756" charset="UTF-8"></script>
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-	<header id="blog_title"> 
-		<h1><a href="/">{{site.title}}</a></h1>
-	</header>
-	<nav id="menu">
-		<ul class="header-nav">
-			<li><a href="https://github.com/lusipha" target="_blank">Github</a></li>
-			<li{% if page.read %} class="current"{% endif %}><a href="/tags.html">Tags</a></li>
-			<li{% if page.photo %} class="current"{% endif %}><a href="/read.html">Read</a></li>
-			<li{% if page.about %} class="current"{% endif %}><a href="/about">About</a></li>
-			<li><a href="http://feed.lusipha.github.com" class="menu-rss" target="_blank"></a></li>
-		</ul>
-	</nav>
-	<div class="clear"></div>
-</div>
+<header>
+  <nav class="mobile-nav show-on-mobiles">
+    {% include primary-nav-items.html %}
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="{{ site.url }}/">
+          <span>薛笛</span>
+          <img src="{{ site.url }}/img/logo-2x.png" width="230" height="110" alt="">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      {% include primary-nav-items.html %}
+    </nav>
+  </div>
+</header>

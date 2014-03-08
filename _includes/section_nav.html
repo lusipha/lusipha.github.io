@@ -1,0 +1,22 @@
+<div class="section-nav">
+  <div class="left align-right">
+    {% if page.previous != null %}
+      <a href="{{ page.previous.url }}/" class="prev">
+        Back
+      </a>
+    {% else %}
+      <span class="prev disabled">Back</span>
+    {% endif %}
+  </div>
+  <div class="right align-left">
+    {% if page.next != null %}
+      <a href="{{ page.next.url }}/" class="next">
+        Next
+      </a>
+    {% else %}
+      <span class="next disabled">Next</span>
+    {% endif %}
+  </div>
+  <div class="clear"></div>
+</div>
+
