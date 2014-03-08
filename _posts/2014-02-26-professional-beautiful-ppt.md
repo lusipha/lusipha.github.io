@@ -1,7 +1,7 @@
 ---
 layout: post_item
 title:  'Professional Beautiful 的PPT制作技巧【持续更新】'
-date:   2014-02-28
+date:   2014-02-26
 author: 薛笛
 categories : [写作技巧]
 tags: [写作技巧]

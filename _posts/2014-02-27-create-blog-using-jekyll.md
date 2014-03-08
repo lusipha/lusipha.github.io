@@ -1,7 +1,7 @@
 ---
 layout: post_item
 title:  'Github+Jekyll+Markdown搭建免费个人博客【持续更新】'
-date:   2014-02-26
+date:   2014-02-27
 author: 薛笛
 categories : [写作技巧]
 tags:	[写作技巧]

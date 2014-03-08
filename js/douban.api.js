@@ -4,9 +4,9 @@ function DoubanApi() {
 		user:"4594729",
 		api:"0be4eb568ced1cff23aec203a6c756fd",
 		book:[{status:"reading",maxnum:20},{status:"read",maxnum:100},{status:"wish",maxnum:100}],
-		bookreadingtitle:"在读...",
-		bookreadtitle:"读过...",
-		bookwishtitle:"想读..."
+		bookreadingtitle:"[我在读]",
+		bookreadtitle:"[我读过]",
+		bookwishtitle:"[我想读]"
 	};
 }
 
@@ -90,7 +90,7 @@ DoubanApi.prototype.all_url = function(type,status,begin,end) {
 			}
 			if ($("#" + type + status).length === 0) {
 				var title = this.defaults[type + status + "title"];
-				$('<h4 class="douban-title">' + title + '</h4>').appendTo(mainplace);
+				$('<h2 class="post-category">' + title + '</h2>').appendTo(mainplace);
 				$('<div id="' + type + status + '" class="douban-list"><ul></ul></div>').appendTo(mainplace);
 				$('<div class="clear"></div>').appendTo(mainplace);
 			}
