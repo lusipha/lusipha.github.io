@@ -1,18 +1,18 @@
 ---
 layout: post_item
-title:  'Github+Jekyll+Markdown搭建免费个人博客【持续更新】'
+title:  '用Github Pages搭建免费个人博客'
 date:   2014-02-27
 author: 薛笛
 categories : [写作技巧]
-tags:	[写作技巧]
+tags:	[演讲]
 ---
 
 
-经过几天的折腾，从无到有建立一个托管到Github Pages上的Blog。总体难度不大，主要是查找模板、更改配置、熟悉语法等一些琐碎的事情。架子搭好了之后，一般就不用再折腾了，码字过程还是相当简单和流畅的。
+经过几天的折腾，终于搞掂了一个托管到Github Pages上的Blog。总体难度不大，主要是查找模板、更改配置、熟悉语法等一些琐碎的事情。折腾了几个模板都感觉不满意，最后还是Fork了jekyll主页的project改了改才算完工。架子搭好了之后，一般就不用再折腾了，码字过程还是相当简单和流畅的。
 
 <!--more-->
 
-### 关于使用Github Pages搭建个人Blog的相关教程
+### 关于使用Github Pages搭建个人Blog的一些经验
 
 * 在Github上注册一个帐号，创建一个`username.github.io`的仓库
 * 在Github上寻找合适的或你喜欢的blog仓库，fork到自己的空间中，并pull到本地
@@ -36,12 +36,12 @@ tags:	[写作技巧]
 
 【外链图片】博客文章一般都有配图的需要，不过由于github限定了一个免费仓库最多300M空间，所以还是省着点用，把更多的空间留给文字吧。通常的方法是寻找一个可以外链图片的空间或图床，如果肯花钱买空间自然不用愁；但若不想花钱，又想有稳定、快速、没水印的图床就没那么容易了。
 
-当然，萝卜白菜各有所爱，我还是喜欢用微博相册做外链图床，简单又方便。貌似新浪和腾讯的微博把图片发上去就能得到下载url，还是挺方便的，我一直用它。但是为了预防万一，最好还是把图片在本地仓库的文件夹里，并且在.gitignore里面把这个目录加进去，这样万一图床失效了图片还有救。只是费点事改下链接就行了。最后发个养眼的俊男美女来作为外链图片的小结吧：
+我喜欢用微博相册做外链图床，简单又方便。貌似新浪和腾讯的微博把图片发上去就能得到下载url，还是挺方便的，只是都有水印，不过看在没给钱的份上就忍了。为了预防万一，最好还是把图片在本地仓库的文件夹里，并且在.gitignore里面把这个目录加进去，这样即省了流量、也可以保证图床失效了之后图片还有救，到时候只是费点事改下链接就行了。最后发个外链的养眼的俊男美女：
 
 ![微博相册图床](http://t2.qpic.cn/mblogpic/5b24796b20e92a2c0844/2000 "测试图片")
 
 【Block Quotes】
->文本块演示
+> 文本块演示
 > >嵌套文本块演示
 
 【代码格式】
@@ -55,9 +55,34 @@ int main(int argc, char ** argv)
 #=> prints 'hello world!' to STDOUT.
 {% endhighlight %}
 
+
 ```sh
 sudo vi /etc/network/interfaces
 ```
+【有特点的标签--与公式冲突？？】
+
+<div class="note">
+  <h5>ProTips™ help you get more from Jekyll</h5>
+  <p>These are tips and tricks that will help you be a Jekyll wizard!</p>
+</div>
+
+<div class="note info">
+  <h5>Notes are handy pieces of information</h5>
+  <p>These are for the extra tidbits sometimes necessary to understand
+     Jekyll.</p>
+</div>
+
+<div class="note warning">
+  <h5>Warnings help you not blow things up</h5>
+  <p>Be aware of these messages if you wish to avoid certain death.</p>
+</div>
+
+<div class="note unreleased">
+  <h5>You'll see this by a feature that hasn't been released</h5>
+  <p>Some pieces of this website are for future versions of Jekyll that
+    are not yet released.</p>
+</div>
+
 
 【数学公式】  
 {% include mathjax.html %}
