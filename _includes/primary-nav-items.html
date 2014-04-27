@@ -1,12 +1,12 @@
 <ul>
-  <li class="{% if page.overview %}current{% endif %}">
+  <li class="{% if page.url contains '/index.html' %}current{% endif %}">
     <a href="{{ site.url }}/">Home</a>
   </li>
-  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
-    <a href="{{ site.url }}/read.html">Read</a>
-  </li>
-  <li class="{% if page.author %}current{% endif %}">
+  <li class="{% if page.url contains '/tags.html' %}current{% endif %}">
     <a href="{{ site.url }}/tags.html">Tags</a>
+  </li>
+  <li class="{% if page.url contains '/read.html' %}current{% endif %}">
+    <a href="{{ site.url }}/read.html">Read</a>
   </li>
   <li class="">
     <a href="{{ site.repository }}"><span class="hide-on-mobiles">View on </span>GitHub</a>
